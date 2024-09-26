@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Main CSS-->
+    <title>Priya's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Priya Kumari</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>An aspiring student, passionate about technology and proficient in software development and Data structure and algorithm, 
+                aiming to contribute skills and expertise to an innovative team or organization.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" class="btn">Download Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="profile.jpg" alt="">
+        </div>
+    </section>
+
+    <!--About section deign-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="aboutpic.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Developer</h3>
+            <p>Hi, I'm Priya Kumari, a passionate software developer and aspiring technologist. With a strong educational background in Computer Science and a keen interest in data structures and algorithms, I'm driven to contribute my skills and expertise to innovative teams and organizations. As a detail-oriented and analytical individual, I've honed my technical skills in programming languages like C++, Java, and Python, as well as web development, database management, and data visualization. With a proven track record of delivering quality results in projects and internships, I'm excited to take on new challenges and continue learning and growing in the tech industry. Outside of coding, I enjoy painting, reading, and traveling.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!--Services section design-->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and interactive user interfaces using HTML, CSS, JavaScript, and frameworks like React.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-file"></i>
+                <h3>Technical Documentation</h3>
+                <p>Creating user manuals, guides, and documentation for software applications or systems.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-bug"></i>
+                <h3>Testing & Quality Assurance</h3>
+                <p> Writing unit tests, integration tests, and performing manual testing to ensure software quality and reliability.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio section design-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="project1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>AI & Energy Consumption</h4>
+                    <p>This model is trained to reduce the energy consumption of a server while ensuring optimal conditions for it to work.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="project2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Grocery Store Application</h4>
+                    
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!--Contact section design-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <!--footer design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy;2024 by @priyakumari | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!----scroll reveal js---->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!------typed js------>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--main js-->
+    <script src="main.js"></script>
+</body>
+</html>
