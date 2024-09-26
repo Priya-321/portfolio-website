@@ -506,7 +506,7 @@ span{
     }
 }
 
-@media (max-width:617px){
+@media (max-width:450px){
     html{
         font-size: 50%;
     }
