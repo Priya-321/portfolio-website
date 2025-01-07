@@ -19,7 +19,7 @@ window.onscroll=()=>{
         let id = sec.getAttribute('id');
 
         if(top>=offset && top<height+height){
-            navlinks.forEach.apply(links=>{
+            navlinks.forEach(links=>{
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*='+id+']').classList.add('active');
             });
@@ -48,10 +48,10 @@ ScrollReveal().reveal('.home-content h1, .about-img',{origin:'left'});
 ScrollReveal().reveal('.home-content p, .about-content',{origin:'right'});
 
 /************************************typed js*************************************** */
-const typed = new Typed('.multiple-text',{
+/*const typed = new Typed('.multiple-text',{
     strings:['Frontend Developer', 'Technical Documentation', 'Testing & Quality Assurance'],
     typeSpeed:70,
     backSpeed:70,
     backDelay:1000,
     loop:true,
-});
+});*/
