@@ -9,6 +9,16 @@
     <!--Main CSS-->
     <title>Priya's Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+         publicKey: "4QMoQW4DzZ_fS83Fm",
+        });
+      })();
+    </script>
 </head>
 <body>
     <!--header-->
@@ -19,41 +29,45 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact Me</a>
         </nav>
     </header>
 
     <!--home section design-->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi, Myself</h3>
+            <h3>Hi, I'm</h3>
             <h1>Priya Kumari</h1>
             <h3>And I'm a <span>Software Developer</span></h3>
             <p>An aspiring student, passionate about technology and proficient in software development and Data structure and algorithm, 
                 aiming to contribute skills and expertise to an innovative team or organization.</p>
             <div class="social-media">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/priyas.canvas?igsh=dmRxMHBpcXBrNXhr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/priya-kumari-a34548229"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Priya-321"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="resume.pdf" download="resume.pdf" class="btn">Download Resume</a>
+            <a href="resume.pdf" class="btn">Resume</a>
         </div>
         <div class="home-img">
-            <img src="profile.jpg" alt="">
+            <img src="profile.jpg" alt="Profile Image">
         </div>
     </section>
 
     <!--About section deign-->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="aboutpic.png" alt="">
+            <img src="aboutpic.png" alt="Priya Kumari, Software Developer">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Software Developer</h3>
-            <p>Hi, I'm Priya Kumari, a passionate software developer and aspiring technologist. With a strong educational background in Computer Science and a keen interest in data structures and algorithms, I'm driven to contribute my skills and expertise to innovative teams and organizations. As a detail-oriented and analytical individual, I've honed my technical skills in programming languages like C++, Java, and Python, as well as web development, database management, and data visualization. With a proven track record of delivering quality results in projects and internships, I'm excited to take on new challenges and continue learning and growing in the tech industry. Outside of coding, I enjoy painting, reading, and traveling.</p>
-            <a href="#" class="btn">Read More</a>
+            <p>My journey in software development has given me hands-on experience in a variety of programming languages, including <strong>C++</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>, along with expertise in <strong>data structures</strong>. I thrive on building robust solutions and constantly refining my skills to keep up with new advancements in the tech world.</p>
+            <p>Aside from coding, I have a deep appreciation for <strong>web development</strong>, <strong>database management</strong>, and <strong>software architecture</strong>. My goal is to always deliver high-quality, scalable solutions while continuously growing as a developer. I'm always eager to take on new challenges and collaborate with like-minded professionals to create impactful software.</p>
+            <p>In addition to my technical skills, I pride myself on being adaptable and having excellent <strong>team leadership</strong> abilities. Whether working on a solo project or collaborating within a team, I enjoy contributing my ideas and learning from others.</p>
+            <p>Outside of coding, I find creativity in <strong>painting</strong>, <strong>reading</strong>, and <strong>traveling</strong>. These activities help me recharge, stay inspired, and bring fresh perspectives to my work.</p>
+    
+            <a href="https://www.linkedin.com/in/priya-kumari-a34548229" class="btn">Connect with Me</a>
         </div>
     </section>
 
@@ -65,22 +79,22 @@
             <div class="services-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
-                <p>Building responsive and interactive user interfaces using HTML, CSS, JavaScript, and frameworks like React.</p>
-                <a href="#" class="btn">Read More</a>
+                <p>I specialize in building responsive, user-friendly websites and web applications. Using technologies like <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and frameworks such as <strong>React</strong>, I create seamless and interactive web experiences.</p>
+                <a href="https://github.com/Priya-321/portfolio-website" class="btn">Explore My Work</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-solid fa-file"></i>
                 <h3>Technical Documentation</h3>
-                <p>Creating user manuals, guides, and documentation for software applications or systems.</p>
-                <a href="#" class="btn">Read More</a>
+                <p>I provide clear and comprehensive technical documentation, including user manuals, API documentation, and guides to help users and developers understand software applications.</p>
+                <a href="https://github.com/Priya-321/Ai-and-Energy-consumption" class="btn">View Documentation</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-solid fa-bug"></i>
                 <h3>Testing & Quality Assurance</h3>
-                <p> Writing unit tests, integration tests, and performing manual testing to ensure software quality and reliability.</p>
-                <a href="#" class="btn">Read More</a>
+                <p>I ensure software reliability through writing <strong>unit tests</strong>, conducting <strong>integration testing</strong>, and performing <strong>manual testing</strong> to guarantee high-quality products.</p>
+                <a href="https://www.linkedin.com/posts/priya-kumari-a34548229_internshipcertificate-professionalgrowth-activity-7109512654720761859-s1KG?utm_source=share&utm_medium=member_desktop" class="btn">Learn More</a>
             </div>
         </div>
     </section>
@@ -116,18 +130,18 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
             </div>
-
+    
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" id="mobile" placeholder="Mobile Number" required>
+                <input type="text" id="subject" placeholder="Email Subject" required>
             </div>
-
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
