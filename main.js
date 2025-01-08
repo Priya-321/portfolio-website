@@ -55,3 +55,32 @@ ScrollReveal().reveal('.home-content p, .about-content',{origin:'right'});
     backDelay:1000,
     loop:true,
 });*/
+
+
+/***********************Contact form submission************************** */
+emailjs.init("4QMoQW4DzZ_fS83Fm");
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mobile = document.getElementById('mobile').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    emailjs.send("service_mbh9egf", "template_g729cdj", {
+        name: name,
+        email: email,
+        mobile: mobile,
+        subject: subject,
+        message: message
+    })
+    .then(function(response) {
+        alert("Message sent successfully!");
+        form.reset();  // Reset the form after sending the message
+    }, function(error) {
+        alert("Failed to send message, please try again.");
+    });
+});
