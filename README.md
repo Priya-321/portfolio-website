@@ -11,19 +11,19 @@ Contact Section: Functional contact form powered by EmailJS for direct communica
 Smooth Animations: Subtle scroll effects and animations to enhance user experience.
 
 # Technologies Used
-Frontend: HTML, CSS, JavaScript
-Libraries/Frameworks:
+1. Frontend: HTML, CSS, JavaScript
+2. Libraries/Frameworks:
 ScrollReveal.js (for animations)
 Typed.js (for dynamic text)
 EmailJS (for functional contact form)
-Design Tools: figma
+3. Design Tools: figma
 
 # How to Run
 Clone the repository:
 Copy Code: 
-git clone https://github.com/Priya-321/portfolio-website.git
+https://github.com/Priya-321/portfolio-website.git
 
-Copy link : (https://priya-321.github.io/portfolio-website/) in your favorite browser to view the website.
+Copy link : https://priya-321.github.io/portfolio-website/ in your favorite browser to view the website.
 Contact
 If you have any feedback or questions, feel free to contact me through the Contact Me section on the website or via email at priyaki2704@gmail.com.
 
